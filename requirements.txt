@@ -36,3 +36,5 @@ grandalf
 pypdf
 
 faiss-cpu
+
+bs4
