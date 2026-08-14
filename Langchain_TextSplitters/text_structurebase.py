@@ -1,5 +1,4 @@
-from langchain.text_splitter import CharacterTextSplitter
-from langchain_community.document_loaders import PyPDFLoader
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 
 text = """The Skyward Shift: How Drones Are Reshaping Modern Agriculture
 Agriculture has entered a new era driven by data, automation, and precision. Facing the dual pressures of climate volatility and a rapidly expanding global population, the farming sector must produce higher yields with fewer natural resources. At the forefront of this technological shift are Unmanned Aerial Vehicles (UAVs)—commonly known as drones. By bridging the gap between high-altitude satellite imagery and labor-intensive ground scouting, agricultural drones have evolved into vital instruments of modern precision farming.
@@ -10,16 +9,13 @@ Looking forward, the convergence of drone hardware with artificial intelligence 
 In conclusion, drones represent far more than a passing novelty in farming. By transforming reactive practices into proactive, data-driven decisions, drone technology empowers the agricultural sector to maximize crop productivity, conserve critical resources, and build a more resilient global food supply.
 """
 
-splitter = CharacterTextSplitter(chunk_size=500, chunk_overlap=0, separator=' ')
+splitter = RecursiveCharacterTextSplitter(
+    chunk_size=100,
+    chunk_overlap=0
+)
 
-result = splitter.split_text(text)
+chunks = splitter.split_text(text)
 
-print(f"Number of chunks: {len(result)}")
+print(f"Number of chunks: {len(chunks)}")
+print(chunks)
 
-
-
-loader= PyPDFLoader("/Users/rakesh/Documents/Learning/Langchain/Langchain_TextSplitters/Kotak_report_June23.pdf")
-result = splitter.split_documents(loader.load())
-
-print(f"Number of chunks: {len(result)}")
-print(result[0].page_content)
