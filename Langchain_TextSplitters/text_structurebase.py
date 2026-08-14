@@ -18,4 +18,3 @@ chunks = splitter.split_text(text)
 
 print(f"Number of chunks: {len(chunks)}")
 print(chunks)
-
