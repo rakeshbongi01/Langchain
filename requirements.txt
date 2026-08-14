@@ -38,3 +38,5 @@ pypdf
 faiss-cpu
 
 bs4
+
+langchain_text_splitters
