@@ -21,5 +21,3 @@ They contain various vitamins and minerals beneficial for human health.
 docs = text_splitter.split_text(text)
 print(docs)
 print(f"Number of chunks: {len(docs)}")
-
-#test zshrc
