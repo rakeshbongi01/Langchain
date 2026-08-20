@@ -12,4 +12,4 @@ python3 -m pip install --upgrade pip
 Lazy Push:
 
 git config --global alias.cmp '!f() { git add . && git commit -m "$1" && git push; }; f'
-git cmp "fixed prompt template"
+git cmp "langchain_chroma db"

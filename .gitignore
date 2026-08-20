@@ -2,3 +2,4 @@
 venv/
 .venv/
 env/
+my_chroma_db/

@@ -43,3 +43,8 @@ langchain_text_splitters
 
 langchain-experimental 
 langchain-openai
+
+chromadb
+openai 
+tiktoken
+langchain-community
