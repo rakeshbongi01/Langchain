@@ -48,3 +48,17 @@ chromadb
 openai 
 tiktoken
 langchain-community
+
+
+
+
+#Requirements for Youtube RAG
+streamlit
+youtube-transcript-api
+langchain
+langchain-community
+langchain-openai
+langchain-core
+faiss-cpu
+tiktoken
+python-dotenv
