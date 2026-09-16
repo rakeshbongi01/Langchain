@@ -62,3 +62,6 @@ langchain-core
 faiss-cpu
 tiktoken
 python-dotenv
+
+#Tools
+ddgs
