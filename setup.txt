@@ -12,4 +12,4 @@ python3 -m pip install --upgrade pip
 Lazy Push:
 
 git config --global alias.cmp '!f() { git add . && git commit -m "$1" && git push; }; f'
-git cmp "Custom Tools"
+git cmp "Tool Calling"
