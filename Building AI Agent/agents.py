@@ -37,6 +37,7 @@ agent_executor = AgentExecutor(
     tools = [custom_duckduckgo_search],
     verbose = True
 )
+#When set to True, verbose tells the agent executor to print its internal "thought process" live to your terminal as it runs.
 
 response = agent_executor.invoke(
     {"input": "3 Ways to reach Goa from Hyderabad?"}
